@@ -1,0 +1,16 @@
+{
+  "short_name": "Link Generator",
+  "name": "Link Generator Tools",
+  "description": "Extensão de geração de links e acessos para ambientes de desenvolvimento dinâmicos",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+    "default_popup": "index.html",
+    "default_title": "Link Generator",
+    "default_icon": "icon.png"
+  },
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
