@@ -11,6 +11,7 @@ import { TextLimiter } from "../../layout/text-limiter";
 import { CxAction } from "../../inputs/cx-actions";
 import { copyClipboard } from "../../../utils";
 import { v4 as uuidv4 } from 'uuid';
+import { createAcesso, listAcessos } from "../../../db/db-acessos";
 
 export const LinksForm = ({acessos, ambientes}) => {
 
@@ -43,6 +44,29 @@ export const LinksForm = ({acessos, ambientes}) => {
     console.log("Objeto",obj)
   
     setProject(obj)
+  }
+
+  const create = () => {
+    const data = {
+      branch: branch,
+      email: email,
+      projeto: project.id,
+      tipo: typeBranch,
+      porta: port
+    }
+
+    const result = createAcesso(data)
+    console.log('resultado', result);
+  }
+
+
+  const list = async () => {
+    try {
+      const registros = await listAcessos();
+      console.log(registros)
+    } catch (error) {
+      console.error('Erro ao listar acessos:', error);
+    }
   }
 
   useEffect(() => {
@@ -111,6 +135,23 @@ export const LinksForm = ({acessos, ambientes}) => {
           type='text'
           width={'60px'}
         />
+
+      <Grid.Container pt={'12px'}>
+          <CxIconBtn 
+            title={'Feature'}
+            image={feature}
+            onClick={() => create()}
+          />
+        </Grid.Container>
+
+        <Grid.Container pt={'12px'}>
+          <CxIconBtn 
+            title={'Feature'}
+            image={feature}
+            onClick={() => list()}
+          />
+        </Grid.Container>
+
       </Grid.RowStart>
 
       <Grid.RowStart>

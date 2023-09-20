@@ -5,57 +5,77 @@ export const data = {
   acessos: [
     {
       id: 1,
-      projeto: '',
+      projeto: 'SGE',
       urls: [
         {
-          nome: '',
-          caminho: ''
+          nome: 'local',
+          caminho: 'https://www.google.com.br/${email}-${tipo}-${branch}-${porta}'
+        },
+        {
+          nome: 'dev',
+          caminho: 'https://www.gamevicio.com.br/${email}-${tipo}-${branch}-${porta}'
+        },
+        {
+          nome: 'prod',
+          caminho: 'https://www.youtube.com.br/${email}-${tipo}-${branch}-${porta}'
         },
       ],
       ativo: true
     },
     {
       id: 2,
-      projeto: '',
+      projeto: 'CAMPUS',
       urls: [
         {
           nome: 'local',
-          caminho: ''
+          caminho: 'https://www.google.com.br/${email}-${tipo}-${branch}-${porta}'
         },
         {
-          nome: 'branch',
-          caminho: ''
-        }
+          nome: 'dev',
+          caminho: 'https://www.gamevicio.com.br/${email}-${tipo}-${branch}-${porta}'
+        },
+        {
+          nome: 'prod',
+          caminho: 'https://www.youtube.com.br/${email}-${tipo}-${branch}-${porta}'
+        },
       ],
       ativo: true
     },
     {
       id: 3,
-      projeto: '',
+      projeto: 'BACKOFFICE',
       urls: [
         {
-          nome: '',
-          caminho: ''
+          nome: 'local',
+          caminho: 'https://www.google.com.br/${email}-${tipo}-${branch}-${porta}'
         },
         {
-          nome: '',
-          caminho: ''
-        }
+          nome: 'dev',
+          caminho: 'https://www.gamevicio.com.br/${email}-${tipo}-${branch}-${porta}'
+        },
+        {
+          nome: 'prod',
+          caminho: 'https://www.youtube.com.br/${email}-${tipo}-${branch}-${porta}'
+        },
       ],
       ativo: false
     },
     {
       id: 4,
-      projeto: '',
+      projeto: 'AVA',
       urls: [
         {
-          nome: '',
-          caminho: ''
+          nome: 'local',
+          caminho: 'https://www.google.com.br/${email}-${tipo}-${branch}-${porta}'
         },
         {
-          nome: '',
-          caminho: ''
-        }
+          nome: 'dev',
+          caminho: 'https://www.gamevicio.com.br/${email}-${tipo}-${branch}-${porta}'
+        },
+        {
+          nome: 'prod',
+          caminho: 'https://www.youtube.com.br/${email}-${tipo}-${branch}-${porta}'
+        },
       ],
       ativo: false
     },
@@ -63,19 +83,19 @@ export const data = {
   ambientes: [
     {
       id: 1,
-      nome: 'SYS 1'
+      nome: 'SGE'
     },
     {
       id: 2,
-      nome: 'SYS 2'
+      nome: 'CAMPUS'
     },
     {
       id: 3,
-      nome: 'SYS 3'
+      nome: 'BACKOFFICE'
     },
     {
       id: 4,
-      nome: 'SYS 4'
+      nome: 'AVA'
     },
   ]
 }
