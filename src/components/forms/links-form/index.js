@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Grid } from "../../layout/Grid"
+import { Grid } from "../../layout/grid"
 import { CxInput } from "../../inputs/cx-input";
 import { CxSelect } from "../../inputs/cx-select";
 import { CxIconBtn } from "../../inputs/cx-icon-btn";
