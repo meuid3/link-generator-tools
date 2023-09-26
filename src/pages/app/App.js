@@ -3,6 +3,7 @@ import './index.css';
 import { TabComponent } from '../../components/layout/tab';
 import { data } from '../../db/mock'
 import { LinksForm } from '../../components/forms/links-form';
+import { ToolsForm } from '../../components/forms/tools-form';
 
 function App() {
 
@@ -19,8 +20,8 @@ function App() {
           />
         </TabComponent.Item>
 
-        <TabComponent.Item title={'Notas'}>
-          <h1>Em breve!</h1>
+        <TabComponent.Item title={'Ferramentas'}>
+          <ToolsForm/>
         </TabComponent.Item>
 
         <TabComponent.Item title={'Outros'}>
