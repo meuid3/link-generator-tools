@@ -9,16 +9,16 @@ export const data = {
       urls: [
         {
           nome: 'local',
-          caminho: 'https://www.google.com.br/${email}-${tipo}-${branch}-${porta}'
+          caminho: 'https://feature-es-api-auth.devops.grancursosonline.com.br/ms-campus/v1/auth/authorization/${email}?xclient=JDJ5JDEwJEJqck9NVE5SYXFMQ1RFMTF3QlM4ZWVuOHpRQkhTV3RLZmYyUmVBREhnVUd1Wmo4LmZxMUFX&redirect_url=http://localhost:${porta}/autenticar?code='
+        },
+        {
+          nome: 'branch',
+          caminho: 'https://feature-es-api-auth.devops.grancursosonline.com.br/ms-campus/v1/auth/authorization/${email}?xclient=JDJ5JDEwJEJqck9NVE5SYXFMQ1RFMTF3QlM4ZWVuOHpRQkhTV3RLZmYyUmVBREhnVUd1Wmo4LmZxMUFX&redirect_url=https://${tipo}-${branch}.devops.grancursosonline.com.br/autenticar?code='
         },
         {
           nome: 'dev',
-          caminho: 'https://www.gamevicio.com.br/${email}-${tipo}-${branch}-${porta}'
-        },
-        {
-          nome: 'prod',
-          caminho: 'https://www.youtube.com.br/${email}-${tipo}-${branch}-${porta}'
-        },
+          caminho: 'https://feature-es-api-auth.devops.grancursosonline.com.br/ms-campus/v1/auth/authorization/${email}?xclient=JDJ5JDEwJEJqck9NVE5SYXFMQ1RFMTF3QlM4ZWVuOHpRQkhTV3RLZmYyUmVBREhnVUd1Wmo4LmZxMUFX&redirect_url=https://sge-dev.grancursosonline.com.br/autenticar?code='
+        }
       ],
       ativo: true
     },
@@ -28,16 +28,16 @@ export const data = {
       urls: [
         {
           nome: 'local',
-          caminho: 'https://www.google.com.br/${email}-${tipo}-${branch}-${porta}'
+          caminho: 'https://feature-es-api-auth.devops.grancursosonline.com.br/ms-campus/v1/auth/authorization/${email}?xclient=JDJ5JDEwJG0zdEhFbUNzTE5Xemc5bXdWelpkWS4uaHl4ZTM0RnF3dVozTWxiWThTLlk3RVBJbS55dGtD'
+        },
+        {
+          nome: 'branch',
+          caminho: 'https://feature-es-api-auth.devops.grancursosonline.com.br/ms-campus/v1/auth/authorization/${email}?xclient=JDJ5JDEwJG0zdEhFbUNzTE5Xemc5bXdWelpkWS4uaHl4ZTM0RnF3dVozTWxiWThTLlk3RVBJbS55dGtD&redirect_url=https://${tipo}-${branch}.devops.grancursosonline.com.br/graduacao/autenticar/'
         },
         {
           nome: 'dev',
-          caminho: 'https://www.gamevicio.com.br/${email}-${tipo}-${branch}-${porta}'
-        },
-        {
-          nome: 'prod',
-          caminho: 'https://www.youtube.com.br/${email}-${tipo}-${branch}-${porta}'
-        },
+          caminho: 'https://feature-es-api-auth.devops.grancursosonline.com.br/ms-campus/v1/auth/authorization/${email}?xclient=JDJ5JDEwJG0zdEhFbUNzTE5Xemc5bXdWelpkWS4uaHl4ZTM0RnF3dVozTWxiWThTLlk3RVBJbS55dGtD&redirect_url=https://aluno-dev.grancursosonline.com.br/graduacao/autenticar/'
+        }
       ],
       ativo: true
     },
@@ -47,34 +47,22 @@ export const data = {
       urls: [
         {
           nome: 'local',
-          caminho: 'https://www.google.com.br/${email}-${tipo}-${branch}-${porta}'
+          caminho: 'http://localhost:${porta}'
         },
         {
           nome: 'dev',
-          caminho: 'https://www.gamevicio.com.br/${email}-${tipo}-${branch}-${porta}'
-        },
-        {
-          nome: 'prod',
-          caminho: 'https://www.youtube.com.br/${email}-${tipo}-${branch}-${porta}'
-        },
+          caminho: 'https://pos-backoffice-dev.grancursosonline.com.br/'
+        }
       ],
       ativo: false
     },
     {
       id: 4,
-      projeto: 'AVA',
+      projeto: 'POS-AVA',
       urls: [
         {
-          nome: 'local',
-          caminho: 'https://www.google.com.br/${email}-${tipo}-${branch}-${porta}'
-        },
-        {
           nome: 'dev',
-          caminho: 'https://www.gamevicio.com.br/${email}-${tipo}-${branch}-${porta}'
-        },
-        {
-          nome: 'prod',
-          caminho: 'https://www.youtube.com.br/${email}-${tipo}-${branch}-${porta}'
+          caminho: 'https://dev.grancursosonline.com.br/identificacao?action-url-retorno=%2Faluno%2Fpainel'
         },
       ],
       ativo: false

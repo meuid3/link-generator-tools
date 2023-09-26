@@ -12,6 +12,7 @@ export const Li = styled.li`
   justify-content: flex-start;
   align-items: center;
   list-style: none;
+  background: ${props => props.active ? 'rgba(255,255,255, 0.1)' : ''};
 `
 
 export const SimpleList = {
